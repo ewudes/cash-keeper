@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import Vuelidate from 'vuelidate';
+import messagePlugin from '@/utils/message.plugin';
 import App from './App.vue';
 import './registerServiceWorker';
 import router from './router';
@@ -9,6 +10,7 @@ import 'materialize-css/dist/js/materialize.min';
 
 Vue.config.productionTip = false;
 
+Vue.use(messagePlugin);
 Vue.filter('date', dateFilter);
 Vue.use(Vuelidate);
 
