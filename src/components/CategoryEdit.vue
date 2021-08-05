@@ -88,7 +88,7 @@ export default {
       this.current = id;
       this.title = title;
       this.limit = limit;
-    }, 200);
+    }, 0);
   },
   methods: {
     async submitHandler() {
@@ -117,7 +117,7 @@ export default {
       this.select = M.FormSelect.init(this.$refs.select);
       // eslint-disable-next-line no-undef
       M.updateTextFields();
-    }, 200);
+    }, 0);
   },
   destroyed() {
     if (this.select && this.select.destroy) {
