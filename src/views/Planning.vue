@@ -23,7 +23,7 @@
           <strong>{{ cat.title }}:</strong>
           {{ cat.spend | currency}} из {{ cat.limit | currency}}
         </p>
-        <div class="progress" >
+        <div class="progress" v-tooltip="cat.tooltip">
           <div
               class="determinate"
               :class="[cat.progressColor]"
@@ -37,6 +37,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
+import currencyFilter from '@/components/filters/currency.filter';
 
 export default {
   name: 'planning',
@@ -68,11 +69,16 @@ export default {
         : percent < 100
           ? 'yellow'
           : 'red';
+
+      const tooltipValue = cat.limit - spend;
+      const tooltip = `${tooltipValue < 0 ? 'Превышение на ' : 'Осталось'} ${currencyFilter(Math.abs(tooltipValue))}`;
+
       return {
         ...cat,
         progressPercent,
         progressColor,
         spend,
+        tooltip,
       };
     });
 
