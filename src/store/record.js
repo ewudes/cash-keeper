@@ -23,7 +23,7 @@ export default {
       }
     },
 
-    async fetchRecordsById({ dispatch, commit }, id) {
+    async fetchRecordById({ dispatch, commit }, id) {
       try {
         const uid = await dispatch('getUid');
         const record = (await firebase.database().ref(`/users/${uid}/records`).child(id).once('value')).val() || {};
