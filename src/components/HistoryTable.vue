@@ -26,6 +26,7 @@
       </td>
       <td>
         <button
+            v-tooltip="'Посмотреть запись'"
             class="btn-small btn"
             @click="$router.push('/detail/' + record.id)">
           <i class="material-icons">open_in_new</i>
