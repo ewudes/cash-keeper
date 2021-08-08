@@ -17,8 +17,7 @@
               data-target="dropdown"
               ref="dropdown"
           >
-            <!-- TODO: Разобраться, почему не подтягивается имя пользователя -->
-            <!-- {{name}} -->
+            {{name}}
             <i class="material-icons right">arrow_drop_down</i>
           </a>
 
