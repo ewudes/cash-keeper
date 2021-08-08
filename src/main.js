@@ -1,7 +1,9 @@
 import Vue from 'vue';
 import Vuelidate from 'vuelidate';
 import Paginate from 'vuejs-paginate';
+import VueMeta from 'vue-meta';
 import messagePlugin from '@/utils/message.plugin';
+import titlePlugin from '@/utils/title.plugin';
 import Loader from '@/components/app/Loader.vue';
 import firebase from 'firebase/app';
 import App from './App.vue';
@@ -20,6 +22,8 @@ import 'firebase/database';
 Vue.config.productionTip = false;
 
 Vue.use(messagePlugin);
+Vue.use(VueMeta);
+Vue.use(titlePlugin);
 Vue.filter('date', dateFilter);
 Vue.filter('currency', currencyFilter);
 Vue.filter('localize', localizeFilter);
