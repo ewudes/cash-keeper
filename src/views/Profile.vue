@@ -30,6 +30,8 @@
         </label>
       </div>
 
+      // TODO: Добавить возможность смены темы оформления
+
       <button class="btn waves-effect waves-light" type="submit">
         Обновить
         <i class="material-icons right">send</i>
