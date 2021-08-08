@@ -1,0 +1,10 @@
+{
+    "ProfileTitle": "Профиль",
+    "Name": "Имя",
+    "Message_EnterName": "Введите имя",
+    "Menu_Bill": "Счет",
+    "Menu_History": "История",
+    "Menu_Planning": "Планирование",
+    "Menu_NewRecord": "Новая запись",
+    "Menu_Category": "Категории"
+}
