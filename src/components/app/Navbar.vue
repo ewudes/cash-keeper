@@ -1,5 +1,5 @@
 <template>
-  <nav class="nav">
+  <nav class="navbar orange">
     <div class="nav-wrapper">
       <div class="navbar-left">
         <a href="#"
@@ -76,9 +76,3 @@ export default {
   },
 };
 </script>
-
-<style lang="scss" scoped>
-  .nav {
-    background-color: #f6f6f6;
-  }
-</style>
