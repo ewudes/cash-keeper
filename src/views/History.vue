@@ -31,9 +31,9 @@
 </template>
 
 <script>
+import { Pie } from 'vue-chartjs';
 import paginationMixin from '@/mixins/pagination.mixin';
 import HistoryTable from '@/components/HistoryTable.vue';
-import { Pie } from 'vue-chartjs';
 
 export default {
   name: 'history',
