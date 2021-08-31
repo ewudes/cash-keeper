@@ -1,12 +1,16 @@
 <template>
-  <nav class="navbar orange">
+  <nav>
     <div class="nav-wrapper">
+      <a href="#!" class="brand-logo">
+        <img class="brand-logo__img" src="@/assets/img/logo.svg" alt="Cash Keeper">
+      </a>
       <div class="navbar-left">
         <a href="#"
+          data-target="mobile-demo"
+          class="sidenav-trigger"
           @click.prevent="$emit('click')">
           <i class="material-icons black-text">dehaze</i>
         </a>
-        <span class="black-text">{{date | date('datetime')}}</span>
       </div>
 
       <ul class="right hide-on-small-and-down">
@@ -76,3 +80,21 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .nav-wrapper {
+    background-color: #ffffff;
+
+    .brand-logo {
+      display: block;
+      height: 64px;
+      padding: 5px;
+
+      &__img {
+        width: 54px;
+        height: 54px;
+      }
+    }
+  }
+
+</style>
