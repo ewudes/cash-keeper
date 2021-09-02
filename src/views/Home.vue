@@ -52,3 +52,9 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .page-title {
+    border: 0;
+  }
+</style>

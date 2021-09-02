@@ -32,7 +32,7 @@ import messages from '@/utils/messages';
 export default {
   name: 'main-layout',
   data: () => ({
-    isOpen: true,
+    isOpen: false,
     loading: true,
   }),
   async mounted() {
@@ -59,3 +59,17 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+  .app-main-layout {
+    background-color: #F8F8F8;
+
+    .app-content {
+      padding-top: 0;
+
+      .app-page {
+        padding-top: 16px;
+      }
+    }
+  }
+</style>
