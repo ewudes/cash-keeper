@@ -1,5 +1,5 @@
 <template>
-  <nav>
+  <nav class="nav">
     <div class="nav-wrapper">
       <a href="#!" class="brand-logo">
         <img class="brand-logo__img" src="@/assets/img/logo.svg" alt="Cash Keeper">
@@ -12,6 +12,7 @@
           <i class="material-icons black-text">dehaze</i>
         </a>
       </div>
+      <Navigation />
 
       <ul class="right hide-on-small-and-down">
         <li>
@@ -45,7 +46,12 @@
 </template>
 
 <script>
+import Navigation from '@/components/app/Navigation.vue';
+
 export default {
+  components: {
+    Navigation,
+  },
   data: () => ({
     date: new Date(),
     interval: null,
@@ -82,6 +88,10 @@ export default {
 </script>
 
 <style lang="scss">
+  .nav {
+    box-shadow: none;
+    border-bottom: 1px solid #E5E5E5;
+  }
   .nav-wrapper {
     background-color: #ffffff;
 
