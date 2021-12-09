@@ -23,8 +23,8 @@ export default {
       { title: localizeFilter('Menu_Bill'), url: '/', exact: true },
       { title: localizeFilter('Menu_History'), url: '/history' },
       { title: localizeFilter('Menu_Planning'), url: '/planning' },
-      { title: localizeFilter('Menu_NewRecord'), url: '/record' },
       { title: localizeFilter('Menu_Category'), url: '/categories' },
+      { title: localizeFilter('Menu_NewRecord'), url: '/record' },
     ],
   }),
 };
@@ -37,7 +37,7 @@ export default {
 
     & .active {
       background-color: transparent;
-      border-bottom: 2px solid red;
+      border-bottom: 2px solid #E21A1A;
       height: 64px;
     }
   }
