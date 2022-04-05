@@ -46,7 +46,8 @@ export default {
       return this.$store.getters.error;
     },
     locale() {
-      return this.$store.getters.info.locale;
+      console.log('this', this);
+      return 'ru-RU';
     },
   },
   watch: {

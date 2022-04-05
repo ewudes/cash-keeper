@@ -1,6 +1,5 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import firebase from 'firebase/app';
 
 Vue.use(VueRouter);
 
@@ -69,11 +68,9 @@ const router = new VueRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  // eslint-disable-next-line prefer-destructuring
-  const currentUser = firebase.auth().currentUser;
   const requireAuth = to.matched.some((record) => record.meta.auth);
 
-  if (requireAuth && !currentUser) {
+  if (requireAuth) {
     next('/login?message=login');
   } else {
     next();
