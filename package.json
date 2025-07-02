@@ -1,7 +1,6 @@
 {
-  "name": "vue-crm",
-  "version": "0.1.0",
-  "private": true,
+  "name": "cash-keeper",
+  "version": "1.0.0",
   "scripts": {
     "dev": "vue-cli-service serve",
     "build": "vue-cli-service build",
